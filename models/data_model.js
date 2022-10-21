@@ -1,16 +1,9 @@
 const mongoose = require('mongoose');
 
 const DataSchema = new mongoose.Schema({
-    name: {
-        typeof: String,
-        require: false,
-         
-    },
-    email: {
-        typeof: String,
-        require: false,
-     },
-
+    name: String,
+    email: String,
+    phone: Number
 });
 
-module.exports = mongoose.model('DataModel', DataSchema);
+module.exports = mongoose.model('test1', DataSchema);
